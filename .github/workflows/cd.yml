@@ -2,7 +2,7 @@ name: CD
 
 on:
   push:
-    branches: [deployment]
+    branches: [main]
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
@@ -26,7 +26,7 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
         with:
-          registries: "685057748560"
+          registries: "050451405297"
 
       - name: Build and push app image
         id: build-app
