@@ -106,7 +106,7 @@ def compute_sparse_vectors(
         tf = Counter(tokens)
         total_terms = len(tokens)
 
-        # Map terms to hash buckets; last-write wins on rare collisions
+        # Map terms to hash buckets; last-write wins on rare collision
         bucket_weights: dict[int, float] = {}
         for term, count in tf.items():
             idx = abs(hash(term)) % n_features
