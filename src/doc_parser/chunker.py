@@ -9,7 +9,7 @@ from doc_parser.post_processor import ElementLike
 logger = logging.getLogger(__name__)
 
 # Token-count heuristic multiplier: word count * 1.3 approximates subword tokenization
-# for typical English text (e.g. BPE tokenizers such as tiktoken cl100k_base).
+# for typical English text (e.g. BPE tokenizers such as tiktoken cl100k_base).s
 _TOKEN_WORD_RATIO: float = 1.3
 
 # Labels that must never be split across chunks
