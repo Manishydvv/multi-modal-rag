@@ -15,7 +15,7 @@ from doc_parser.utils.pdf_utils import count_pdf_pages
 logger = logging.getLogger(__name__)
 
 try:
-    from glmocr import GlmOcr  # type: ignore[import]
+    from glmocr import GlmOcr  # type: ignore[import]]
     _GLMOCR_AVAILABLE = True
 except ImportError:
     _GLMOCR_AVAILABLE = False
