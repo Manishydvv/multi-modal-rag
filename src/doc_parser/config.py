@@ -16,7 +16,7 @@ class Settings(BaseSettings):
         case_sensitive=False,
     )
 
-    # Parser backend
+    # Parser backends
     parser_backend: str = "cloud"  # "cloud" | "ollama"
     z_ai_api_key: SecretStr | None = None
     log_level: str = "INFO"
