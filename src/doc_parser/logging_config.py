@@ -1,4 +1,4 @@
-"""Loguru logging setup with stdlib interception."""
+"""Loguru logging setup with stdlib interception"""
 from __future__ import annotations
 
 import logging
